@@ -19,7 +19,7 @@ const Work = () => {
     return (
         <>
             <Heading 
-                title="Work Experience" 
+                title="WORK EXPERIENCE" 
             />
             {workInfo.map((workList) => (
                 <SaveWorkInfo

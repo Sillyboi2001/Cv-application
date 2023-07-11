@@ -1,7 +1,7 @@
 import './App.css';
 import Info from './components/Info/Info';
 import Work from './components/Work/Work';
-import EducationInputForm from './components/Education/EducationInputForm';
+import Education from './components/Education/Education';
 
 function App() {
   return (
@@ -14,8 +14,7 @@ function App() {
             <Work />
         </div>
         <div id="education-section">
-            <div id="section-heading">EDUCATION</div>
-            <EducationInputForm />
+            <Education />
         </div>
         <div id="save-cv-container">
             <button id="save-page-btn">SAVE CV</button>
