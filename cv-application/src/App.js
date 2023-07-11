@@ -1,6 +1,6 @@
 import './App.css';
 import Info from './components/Info/Info';
-import WorkInputForm from './components/Work/WorkInputForm';
+import Work from './components/Work/Work';
 import EducationInputForm from './components/Education/EducationInputForm';
 
 function App() {
@@ -11,13 +11,10 @@ function App() {
         </div>
         <Info />
         <div id="work-section">
-            <div id="section-heading">WORK EXPERIENCE</div>
-            <div id="open-btn-container"><button type="button" >+ Add Work Experience</button></div>
-            <WorkInputForm />
+            <Work />
         </div>
         <div id="education-section">
             <div id="section-heading">EDUCATION</div>
-            <div id="open-btn-container"><button type="button">+ ADD EDUCATION</button></div>
             <EducationInputForm />
         </div>
         <div id="save-cv-container">
