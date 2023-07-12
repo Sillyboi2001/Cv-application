@@ -16,6 +16,9 @@ const Work = () => {
         addWorkInfo(workExperience)
         handleDisplay()
     }
+    const deleteWork = (id) => {
+        addWorkInfo(workInfo.filter(work => work.id !== id ))
+    }
     return (
         <>
             <Heading 
@@ -24,6 +27,8 @@ const Work = () => {
             {workInfo.map((workList) => (
                 <SaveWorkInfo
                     workList={workList}
+                    key={workList.id}
+                    deleteWork={deleteWork}
                 />
             ))}
             <WorkInputForm 

@@ -28,9 +28,9 @@ const WorkInputForm = (props) => {
     if(!props.displayForm) return null
     return (
         <>
-            <form class="form-section" onSubmit={handleSubmit}>
+            <form className="form-section" onSubmit={handleSubmit}>
             <div>
-                <label for="job-title">Job Title</label>
+                <label htmlFor="job-title">Job Title</label>
                 <input
                     type="text"
                     id="job-title"
@@ -39,7 +39,7 @@ const WorkInputForm = (props) => {
                     onChange={handleChange} />
             </div>
             <div>
-                <label for="company">Company</label>
+                <label htmlFor="company">Company</label>
                 <input
                     type="text"
                     id="company"
@@ -48,7 +48,7 @@ const WorkInputForm = (props) => {
                     onChange={handleChange} />
             </div>
             <div>
-                <label for="date">Date Worked(MM/YYYY - MM/YYYY)</label>
+                <label htmlFor="date">Date Worked (MM/YYYY - MM/YYYY)</label>
                 <input
                     type="text"
                     id="date"
@@ -57,7 +57,7 @@ const WorkInputForm = (props) => {
                     onChange={handleChange} />
             </div>
             <div>
-                <label for="location">Location(e.g Los Angeles, CA)</label>
+                <label htmlFor="location">Location(e.g Los Angeles, CA)</label>
                 <input
                     type="text"
                     id="location"
@@ -66,7 +66,7 @@ const WorkInputForm = (props) => {
                     onChange={handleChange} />
             </div>
             <div>
-                <label for="description">Description</label>
+                <label htmlFor="description">Description</label>
                 <textarea
                     id="description"
                     name="description"

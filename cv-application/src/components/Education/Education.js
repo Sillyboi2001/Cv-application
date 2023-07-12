@@ -16,12 +16,17 @@ const Education = () => {
         addEduInfo(education)
         handleDisplay()
     }
+    const deleteTask = (id) => {
+        addEduInfo(eduInfo.filter(edu => edu.id !== id))
+    }
     return (
         <>
             <Heading title="EDUCATION" />
             {eduInfo.map((eduList) => (
                 <SaveEduInfo 
                     eduList={eduList}
+                    key={eduList.id}
+                    deleteEdu={deleteTask}
                 />
             ))}
             <EducationInputForm 

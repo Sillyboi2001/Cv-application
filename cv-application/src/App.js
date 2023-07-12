@@ -5,7 +5,7 @@ import Education from './components/Education/Education';
 
 function App() {
   return (
-    <div class="app">
+    <div className="app">
         <div id="header">
             <h1>CV APPLICATION</h1>
         </div>

@@ -28,9 +28,9 @@ const EducationInputForm = (props) => {
     if(!props.displayForm) return null
     return(
         <>
-            <form class="form-section" onSubmit={handleSubmit}>
+            <form className="form-section" onSubmit={handleSubmit}>
                 <div>
-                    <label for="school">School</label>
+                    <label htmlFor="school">School</label>
                     <input
                         type="text"
                         id="job-title"
@@ -39,7 +39,7 @@ const EducationInputForm = (props) => {
                         onChange={handleChange} />
                 </div>
                 <div>
-                    <label for="degree">Degree</label>
+                    <label htmlFor="degree">Degree</label>
                     <div className="select-container">
                         <select
                             name="degree"
@@ -58,7 +58,7 @@ const EducationInputForm = (props) => {
                     </div>
                 </div>
                 <div>
-                    <label for="school-attended">Date Attended(MM/YYYY - MM/YYYY)</label>
+                    <label htmlFor="school-attended">Date Attended (MM/YYYY - MM/YYYY)</label>
                     <input
                         type="text"
                         id="date"
@@ -67,7 +67,7 @@ const EducationInputForm = (props) => {
                         onChange={handleChange} />
                 </div>
                 <div>
-                    <label for="location">Location(e.g Los Angeles, CA)</label>
+                    <label htmlFor="location">Location(e.g Los Angeles, CA)</label>
                     <input
                         type="text"
                         id="location"
@@ -76,7 +76,7 @@ const EducationInputForm = (props) => {
                         onChange={handleChange} />
                 </div>
                 <div>
-                    <label for="study-field">Field of Study</label>
+                    <label htmlFor="study-field">Field of Study</label>
                     <input
                         type="text"
                         id="study-field"
