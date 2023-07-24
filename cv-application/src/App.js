@@ -2,6 +2,7 @@ import './App.css';
 import Info from './components/Info/Info';
 import Work from './components/Work/Work';
 import Education from './components/Education/Education';
+import SaveBtn from './components/Buttons/SaveBtn';
 
 function App() {
   return (
@@ -9,7 +10,9 @@ function App() {
         <div id="header">
             <h1>CV APPLICATION</h1>
         </div>
-        <Info />
+        <div id="info-section">
+            <Info />    
+        </div>
         <div id="work-section">
             <Work />
         </div>
@@ -17,7 +20,7 @@ function App() {
             <Education />
         </div>
         <div id="save-cv-container">
-            <button id="save-page-btn">SAVE CV</button>
+            <SaveBtn />
         </div>
     </div>
   );
